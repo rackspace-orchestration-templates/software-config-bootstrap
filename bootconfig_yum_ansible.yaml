@@ -37,9 +37,7 @@ resources:
             {{#command}}
             command = {{command}}
             {{/command}}
-            {{#polling_interval}}
-            polling_interval = {{polling_interval}}
-            {{/polling_interval}}
+            polling_interval = 5
             {{#cachedir}}
             cachedir = {{cachedir}}
             {{/cachedir}}
