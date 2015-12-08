@@ -73,6 +73,13 @@ resources:
             {{/metadata_url}}
             {{/request}}
 
+            {{#ec2}}
+            [ec2]
+            {{#metadata_url}}
+            metadata_url = {{metadata_url}}
+            {{/metadata_url}}
+            {{/ec2}}
+
             {{/os-collect-config}}
         - path: /usr/libexec/os-apply-config/templates/var/run/heat-config/heat-config
           content: |
